@@ -1,0 +1,258 @@
+body, html {
+	background:#eee;
+	color:#000;
+	font-family:'Roboto';
+	margin:0;
+	min-height:100vh;
+	width:100%;
+	overflow-x:hidden;
+}
+.logo {
+	position:relative;
+	width:100%;
+	padding:40px 0;
+	margin:0 auto;
+	text-align:center;
+}
+.logo-text {
+	font-size:48px;
+	letter-spacing:6px;
+	font-weight:800;
+	color:#fff;
+}
+.color, .theme {
+	float:left;
+	margin:5px;
+	width:24px;
+	height:24px;
+	border:1px solid #fff;
+	border-radius:5px;
+	cursor:pointer;
+	transition:.1s ease all;
+}
+.color:hover, .theme:hover {
+	border-color:transparent;
+}
+
+.color:nth-child(1) { background:#9a5bba }
+.color:nth-of-type(2) { background:#a6211c }
+.color:nth-of-type(3) { background:#f85920 }
+.color:nth-of-type(4) { background:#4fc0e0 }
+.color:nth-of-type(5) { background:#FF146E }
+
+.color:nth-of-type(6) { background:#396d97 }
+.color:nth-of-type(7) { background:#ef5d89 }
+.color:nth-of-type(8) { background:#ed9537 }
+.color:nth-of-type(9) { background:#02239a }
+.color:nth-of-type(10) { background:#188b4a }
+
+.sidenav {
+	float:left;
+	min-height:100%;
+	width:400px;
+	max-width:30%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+	border-right:2px solid transparent;
+	user-select:none;
+}
+.main {
+	float:left;
+	width:calc(100% - 402px);
+	min-width:calc(70% - 2px);
+	height:100%;
+	position:relative;
+}
+.main-content {
+	padding:10px 30px;
+	margin:0;
+}
+.locked-option {
+	cursor:not-allowed !important;
+	color: #999 !important;
+}
+.option-container {
+	padding-bottom:2px;
+	padding-top:2px;
+}
+.option {
+	overflow:hidden;
+	border-left:8px solid transparent;
+	font-size:18px;
+	padding:15px 0 15px 50px;
+	font-weight:400;
+	cursor:pointer;
+	transition:.1s ease all;
+	margin-top:2px;
+	width:calc(100% - 58px);
+}
+.option:hover {
+	filter:brightness(1.2);
+}
+.option > i {
+	position:absolute;
+	transform:translate(-30px, 2px)
+}
+.sidenav h4 {
+	font-size:20px;
+	font-weight:500;
+	margin:10px 25px 0 25px;
+}
+.color-container {
+	margin-left:25px;
+}
+.footer {
+	margin-top:15px;
+	color:#999;
+	padding:0px 27px;
+	border-width:0px;
+	border-top-width:2px;
+	border-bottom-width:2px;
+	border-style:solid;
+
+}
+.footer p {
+	margin:10px 0;
+	font-size:16px;
+}
+.footer a {
+	text-decoration:none;
+}
+.footer a:hover {
+	filter:brightness(.9);
+}
+.footer i {
+	float:right;
+	cursor:pointer;
+	transition:0s;
+	margin-top:2px;
+}
+.footer i:hover {
+	filter:brightness(2);
+}
+.fa-times {
+	transform:translateX(-3px) scale(1.3)
+}
+.load-container {
+	position:absolute;
+	z-index:999;
+	width:100%;
+	height:100%;
+	margin:0;
+	display:none;
+}
+.upper-bar {
+	position:absolute;
+	width:100%;
+	left:0;
+	top:0;
+	height:0;
+	transition:.3s ease-out all;
+}
+.lower-bar {
+	position:absolute;
+	width:100%;
+	left:0;
+	bottom:0;
+	height:0;
+	transition:.3s ease-out all;
+}
+.bars {
+	position:absolute;
+	width:70px;
+	height:50px;
+	left:calc(50% - 35px);
+	top:calc(50% - 25px);
+	transition:.1s ease all;
+	opacity:0;
+}
+.bar {
+	width:calc((100% / 5) - 2px);
+	height:4px;
+	position:absolute;
+	top:calc(50% - 2px);
+	left:calc(((100% / 5) * 0) + 2px);
+	animation: delay 0.8s infinite ease-in-out;
+}
+.bar1{
+	background-color:#754fa0;
+}
+.bar2{
+	background-color:#09b7bf;
+	animation-delay:-0.7s;
+	left:calc(((100% / 5) * 1) + 2px);
+}
+.bar3{
+	background-color:#90d36b;
+	animation-delay:-0.6s;
+	left:calc(((100% / 5) * 2) + 2px);
+}
+.bar4{
+	background-color:#f2d40d;
+	animation-delay:-0.5s;
+	left:calc(((100% / 5) * 3) + 2px);
+}
+.bar5{
+	background-color:#fcb12b;
+	animation-delay:-0.4s;
+	left:calc(((100% / 5) * 4) + 2px);
+}
+
+@keyframes delay {
+	0%, 40%, 100% {
+		transform: scaleY(1);
+		-webkit-transform: scaleY(1);
+	}
+	20% {
+		   transform: scaleY(10);
+		   -webkit-transform: scaleY(7);
+	}
+}
+
+.opacity {
+	filter:brightness(5);
+}
+.clear {
+	clear:both
+}
+.bold {
+	font-weight:800;
+}
+.col1 {
+	background:#2c3137;
+}
+.col1-font {
+	color:#2c3137;
+}
+.col1-border-color {
+	border-color:#2c3137;
+}
+.col2 {
+	background:#eee;
+}
+.col2-font {
+	color:#eee;
+}
+.col2-border-color {
+	color:#eee;
+}
+.col3 {
+	background:#9a5bba;
+}
+.col3-font {
+	color:#9a5bba;
+}
+.col3-border-color {
+	border-color:#9a5bba;
+}
+.col4-border-color {
+	border-color:#1b1e24;
+}
+.col4 {
+	background:#1b1e24
+}
+.col4-font {
+	background:#1b1e24
+}
+.col3, .col3-font, .col3-border-color {
+	transition:.2s ease all;
+}
