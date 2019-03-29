@@ -130,8 +130,8 @@
                     <div class="bar bar5"></div>
                 </div>
             </div>
-            <div class="main-content" id="tips-and-tricks">
-                <?php include($_SERVER['DOCUMENT_ROOT']."/lessons/tips-and-tricks.php"); ?>
+            <div class="main-content" id="introduction">
+                <?php include($_SERVER['DOCUMENT_ROOT']."/lessons/introduction.php"); ?>
             </div>
 		</div>
 	</body>
