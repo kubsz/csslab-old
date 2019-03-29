@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="test-server">
+  <component name="PublishConfigData" serverName="test-server" uploadOnCheckin="5fce8359-4d30-4f3d-a293-ab5c649bdc05">
     <serverData>
       <paths name="csslab">
         <serverdata>
@@ -24,5 +24,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="csslab" />
   </component>
 </project>

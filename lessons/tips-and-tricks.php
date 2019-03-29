@@ -2,7 +2,7 @@
 <p>Now we're at the end of the tutorial, you should know the basics of CSS styling. However, there is <span class="col3-font bold">always</span> more to learn! Here are <span class="col3-font bold">5</span> tips and tricks that I wish I learnt earlier in my journey with CSS.</p>
 <div class="tip">
     <h2 class="col3-font">Comments</h2>
-    <p>You can comment markup in CSS by using '<span class="col3-font bold">/*</span>' to open the comment, and '<span class="col3-font bold">*/</span>' to end the comment. Comments are very useful as they allow you to write little notes next to your code which will help you, or another person understand it if they're reading it at a later date.</p>
+    <p>You can comment markup in CSS by using <span class="col3-font bold">/*</span> to open the comment, and <span class="col3-font bold">*/</span> to end the comment. Comments are very useful as they allow you to write little notes next to your code which will help you, or another person understand it if they're reading it at a later date.</p>
     <div class="codeblock col1 col2-font">
         <div class="numbers col3-font">
             <p>1</p>
