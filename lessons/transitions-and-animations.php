@@ -51,7 +51,7 @@
         resetElement();
         setTimeout(function() {
             elem.addClass(animation + "-class");
-            switch (animation) {
+            switch (animation) { //dont ask
                 case "rotate":
                     $(".code").html("<code><span class='col3-font'>@keyframes</span> <span class='col3-font bold'>" + animation + "</span> {</code>" +
                         "<code>&nbsp;&nbsp;&nbsp;&nbsp;0% {</code>" +

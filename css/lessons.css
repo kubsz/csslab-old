@@ -918,3 +918,25 @@ p {
 }
 
 /* TIPS AND TRICKS */
+#tips-and-tricks h2 {
+    margin:15px 0 0px 0;
+}
+#tips-and-tricks .tip > p {
+    margin:5px 0;
+}
+#tips-and-tricks .grey {
+    color:grey
+}
+#tips-and-tricks .tip > ul > li {
+    width:calc(50% - 30px);
+    float:left;
+}
+#tips-and-tricks .tip > ul > li:nth-of-type(odd) {
+    margin-right:30px;
+}
+#tips-and-tricks .tip > ul > li > ul > li:nth-of-type(2n) {
+    padding-bottom:20px;
+}
+#tips-and-tricks li {
+    font-size:18px;
+}
