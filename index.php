@@ -114,6 +114,15 @@
                 } else {
                         echo "<i class=\"col3-font fas fa-sticky-note\"></i>";
                     }
+                if(isset($_COOKIE['audio'])) {
+                    if($_COOKIE['audio'] == "false") {
+                        echo "<i class=\"col3-font fas fa-volume-mute\"></i>";
+                    } else {
+                        echo "<i class=\"col3-font fas fa-volume-up\"></i>";
+                    }
+                } else {
+                    echo "<i class=\"col3-font fas fa-volume-mute\"></i>";
+                }
                 ?>
                 </p>
             </div>

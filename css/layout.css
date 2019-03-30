@@ -125,6 +125,7 @@ body, html {
 	cursor:pointer;
 	transition:0s;
 	margin-top:2px;
+	margin-left:10px;
 }
 .footer i:hover {
 	filter:brightness(2);

@@ -19,7 +19,7 @@ function getCookie(c_name) {
     }
 }
 
-$(".footer i").click(function() {
+$(".footer i:first-of-type").click(function() {
     if($(this).hasClass("fa-sticky-note")) {
         $(this).removeClass("fa-sticky-note");
         $(this).addClass("fa-times");
@@ -29,7 +29,18 @@ $(".footer i").click(function() {
         $(this).removeClass("fa-times");
         setCookie("load", "true", "7");
     }
-})
+});
+$(".footer i:last-of-type").click(function() {
+    if($(this).hasClass("fa-volume-up")) {
+        $(this).removeClass("fa-volume-up");
+        $(this).addClass("fa-volume-mute");
+        setCookie("audio", "false", "7");
+    } else {
+        $(this).addClass("fa-volume-up");
+        $(this).removeClass("fa-volume-mute");
+        setCookie("audio", "true", "7");
+    }
+});
 
 $(".color").click(function() {
     color = $(this).css("background-color");
@@ -115,7 +126,9 @@ $(".option").click(function() {
 
     $.post("page.php", {option: option})
         .done(function (data) {
-            audio.play();
+            if(getCookie("audio") == "true") {
+                audio.play();
+            }
             if(getCookie("load") == "true" || getCookie("load") == null) {
                 var time = 1000;
                 load();
