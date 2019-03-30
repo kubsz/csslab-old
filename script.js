@@ -84,6 +84,7 @@ $(".theme").click(function() {
     }
 })
 
+var audio = new Audio('page.wav');
 $(".option").click(function() {
     if ( $(this).attr('disabled') == "disabled" )
         return false;
@@ -114,6 +115,7 @@ $(".option").click(function() {
 
     $.post("page.php", {option: option})
         .done(function (data) {
+            audio.play();
             if(getCookie("load") == "true" || getCookie("load") == null) {
                 var time = 1000;
                 load();
