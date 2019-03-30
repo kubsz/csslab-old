@@ -99,7 +99,7 @@
                 <div class="color col4-border-color" style="background:#396d97"></div>
                 <div class="color col4-border-color" style="background:#ef5d89"></div>
                 <div class="color col4-border-color" style="background:#ed9537"></div>
-                <div class="color col4-border-color" style="background:#188b4a"></div>
+                <div class="color col4-border-color" style="background:#22ac3b"></div>
                 <div class="clear"></div>
             </div>
             <div class="footer col4-border-color">
